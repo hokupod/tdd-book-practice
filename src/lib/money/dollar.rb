@@ -6,7 +6,7 @@ module Money
     end
 
     def times(multiplier)
-      @amount *= multiplier
+      self.class.new(amount * multiplier)
     end
   end
 end
