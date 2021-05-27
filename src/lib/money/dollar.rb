@@ -8,6 +8,11 @@ module Money
     def times(multiplier)
       self.class.new(amount * multiplier)
     end
+
+    def equals(object) 
+      dollar = object
+      amount == dollar.amount
+    end
   end
 end
 
